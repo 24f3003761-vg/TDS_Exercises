@@ -5,12 +5,11 @@
 
 name: Lint Code Base  
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: 24f3003761@ds.study.iitm.ac.in
         run: echo "Hello, world!"
